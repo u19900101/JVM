@@ -9,5 +9,10 @@ public class PCRegisterTest {
         int i = 10;
         int j = 20;
         int k = i + j;
+
+        String kk = "ca";
+        System.out.println(i);
+        System.out.println(k);
+        // System.out.println(kk);
     }
 }
