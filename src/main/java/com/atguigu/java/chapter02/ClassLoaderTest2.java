@@ -14,5 +14,11 @@ public class ClassLoaderTest2 {
     //    2.通过 获取当前线程上下文的ClassLoader：Thread.currentThread().getContextClassLoader()
         ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
         System.out.println(contextClassLoader);
+
+        //3.获取系统的ClassLoader：ClassLoader.getSystemClassLoader()
+        ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
+        System.out.println(systemClassLoader);
+        System.out.println("获取系统的ClassLoader：ClassLoader.getSystemClassLoader() "+systemClassLoader);
+        System.out.println("获取系统的ClassLoader父类：systemClassLoader.getParent() "+systemClassLoader.getParent());
     }
 }
