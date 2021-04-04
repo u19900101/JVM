@@ -19,6 +19,7 @@ public class StringBuilderTest {
         s1.append("b");
     }
 
+
     // 这个也是线程不安全的，因为有返回值，有可能被其它的程序所调用
     public static StringBuilder method04() {
         StringBuilder stringBuilder = new StringBuilder();
