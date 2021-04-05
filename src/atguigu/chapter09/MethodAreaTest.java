@@ -3,14 +3,14 @@ package atguigu.chapter09;
 /**
  * non-final的类变量
  *
- * @author: 陌溪
- * @create: 2020-07-08-16:54
  */
 public class MethodAreaTest {
-    public static void main(String[] args) {
-        Order order = new Order();
+    public static void main(String[] args) throws InterruptedException {
+      /*  Order order = new Order();
         order.hello();
-        System.out.println(order.count);
+        System.out.println(order.count);*/
+      System.out.println("memeda...");
+      Thread.sleep(1000000);
     }
 }
 class Order {
