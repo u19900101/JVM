@@ -11,11 +11,11 @@ package atguigu.chapter09;
  */
 public class MethodAreaTest {
     public static void main(String[] args) throws InterruptedException {
-      /*  Order order = new Order();
+        Order order = null;
         order.hello();
-        System.out.println(order.count);*/
-      System.out.println("memeda...");
-      Thread.sleep(1000000);
+        System.out.println(order.count);
+    /*  System.out.println("memeda...");
+      Thread.sleep(1000000);*/
     }
 }
 class Order {

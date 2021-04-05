@@ -5,11 +5,9 @@ import jdk.internal.org.objectweb.asm.Opcodes;
 
 /**
  * 元空间溢出
- *
- * @author: 陌溪
- * @create: 2020-07-08-15:46
+ * -XX:MetaspaceSize=10M -XX:MaxMetaspaceSize=10M
  */
-public class OOMTest {
+public class OOMTest extends ClassLoader{
     public static void main(String[] args) {
         int j = 0;
         try {
@@ -22,9 +20,16 @@ public class OOMTest {
                 // 返回byte[]
                 byte [] code = classWriter.toByteArray();
                 // 类的加载
+                test.defineClass("Class"+i,code,0,code.length);// class对象
+                j++;
             }
         } catch (Exception e) {
             e.printStackTrace();
+        }finally {
+            System.out.println(j);
         }
     }
+
+//    3331
+// Exception in thread "main" java.lang.OutOfMemoryError: Compressed class space
 }
