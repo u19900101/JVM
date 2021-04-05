@@ -2,7 +2,12 @@ package atguigu.chapter09;
 
 /**
  * non-final的类变量
- *
+ *-XX:MetaspaceSize的设置
+ * windows下默认情况：
+ *   -XX:MetaspaceSize是21M，
+ *   -XX:MaxMetaspaceSize的值是-1，即没有限制。
+ * 设置方式：
+ *  -XX:MetaspaceSize=100M -XX:MaxMetaspaceSize=100M
  */
 public class MethodAreaTest {
     public static void main(String[] args) throws InterruptedException {
