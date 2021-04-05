@@ -1,17 +1,20 @@
 package atguigu.chapter08;
 
 /**
- * 栈上分配
- * -Xmx1G -Xms1G -XX:-DoEscapeAnalysis -XX:+PrintGCDetails
+ * 栈上分配  逃逸分析和标量替换  一起开启效果好，单独开启无甚用
+ * -Xmx1G -Xms1G
+ * -XX:+DoEscapeAnalysis 默认为 true
+ * -XX:+EliminateAllocations 默认为 true
+ * -XX:+PrintGCDetails
  * 开启逃逸分析时 耗时 5ms
  * 不开启逃逸分析时 耗时 735ms
  *
  */
 class User {
-    private String name;
-    private String age;
-    private String gender;
-    private String phone;
+    public String name;
+    public int age;
+    public String gender;
+    public String phone;
 }
 public class StackAllocation {
     public static void main(String[] args) throws InterruptedException {
@@ -28,5 +31,10 @@ public class StackAllocation {
 
     private static void alloc() {
         User user = new User();
+        user.age = 1;
+        user.gender = "kk";
+        user.name= "kk";
+        user.phone = "1569999";
+
     }
 }
