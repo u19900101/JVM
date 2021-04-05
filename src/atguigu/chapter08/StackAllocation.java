@@ -3,8 +3,9 @@ package atguigu.chapter08;
 /**
  * 栈上分配
  * -Xmx1G -Xms1G -XX:-DoEscapeAnalysis -XX:+PrintGCDetails
- * @author: 陌溪
- * @create: 2020-07-07-20:23
+ * 开启逃逸分析时 耗时 5ms
+ * 不开启逃逸分析时 耗时 735ms
+ *
  */
 class User {
     private String name;
