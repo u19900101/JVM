@@ -7,6 +7,8 @@ import java.util.ArrayList;
 /**
  * @author lppppp
  * @create 2021-04-05 20:42
+ *
+ * 直接内存OOM
  */
 public class BufferTest1 {
     private static final int BUFFER = 1024*1024*10;//10M
