@@ -1,11 +1,11 @@
 package atguigu.chapter13;
 
+import org.junit.Test;
+
 /**
  * String的不可变性
  *
- * @author: 陌溪
- * @create: 2020-07-11-8:57
- */
+  */
 public class StringTest1 {
 
     public static void test1() {
@@ -37,9 +37,10 @@ public class StringTest1 {
         System.out.println(s2);
     }
 
-    public static void main(String[] args) {
-        test1();
-        test2();
-        test3();
+    public static void main(String[] args) throws InterruptedException {
+        // test1();
+        // test2();
+        // test3();
+
     }
 }
