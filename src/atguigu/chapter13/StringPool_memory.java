@@ -6,7 +6,7 @@ package atguigu.chapter13;
  *
  *
  */
-public class StringPool_no_dup {
+public class StringPool_memory {
     public static void main(String[] args) {
         System.out.println();
         System.out.println("1");
