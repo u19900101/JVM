@@ -67,6 +67,19 @@ public class StringTest5 {
         System.out.println(s3 == s4);
     }
 
+    // s1 + s2 与  s.append(s1) 性能比较  6691 ms   2ms
+    public static void main(String[] args) {
+        long start = System.currentTimeMillis();
+        method1(100000);
+        long end = System.currentTimeMillis();
+        System.out.println(end-start);
+
+        start = System.currentTimeMillis();
+        method2(100000);
+        end = System.currentTimeMillis();
+        System.out.println(end-start);
+    }
+
     public static void method1(int highLevel) {
         String src = "";
         for (int i = 0; i < highLevel; i++) {
@@ -81,7 +94,5 @@ public class StringTest5 {
         }
     }
 
-    public static void main(String[] args) {
 
-    }
 }
