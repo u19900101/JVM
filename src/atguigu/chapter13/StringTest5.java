@@ -26,9 +26,19 @@ public class StringTest5 {
         String s1 = "javaEE";
         String s2 = "hadoop";
         String s3 = "javaEEhadoop";
-        String s4 = "javaEE" + "hadoop";
+        String s4 = "javaEE" + "hadoop";//编译期 优化了
         String s5 = s1 + "hadoop";
         String s6 = "javaEE" + s2;
+         /*
+          s1 + s2的执行细节
+          StringBuilder s = new StringBuilder();
+          s.append(s1);
+          s.append(s2);
+          s.toString();  -> 类似于new String("ab");
+
+        在JDK5之后，使用的是StringBuilder，在JDK5之前使用的是StringBuffer
+        */
+
         String s7 = s1 + s2;
 
         System.out.println(s3 == s4); // true
@@ -38,7 +48,8 @@ public class StringTest5 {
         System.out.println(s5 == s6); // false
         System.out.println(s5 == s7); // false
         System.out.println(s6 == s7); // false
-
+        //intern方法，则会判断字符串常量池中是否存在JavaEEhadoop值，
+        // 如果存在则返回常量池中的值，否者就在常量池中创建,并返回此对象的地址。
         String s8 = s6.intern();
         System.out.println(s3 == s8); // true
     }
@@ -48,6 +59,10 @@ public class StringTest5 {
         final String s1 = "a";
         final String s2 = "b";
         String s3 = "ab";
+
+        // 1.字符串拼接操作，不一定使用的时StringBuilder
+        //如果拼接符号左右都是 字符串常量 或 字符串常量引用,则仍然使用 编译器优化，即 非StringBuilder方式
+        // 2.针对于final修饰的类、方法、基本数据类型、引用数据类型
         String s4 = s1 + s2;
         System.out.println(s3 == s4);
     }
