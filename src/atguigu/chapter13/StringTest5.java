@@ -1,14 +1,15 @@
 package atguigu.chapter13;
 
+import org.junit.Test;
+
 /**
  * 字符串拼接
  *
- * @author: 陌溪
- * @create: 2020-07-11-9:53
  */
 public class StringTest5 {
 
-    public static void test1() {
+    @Test
+    public void T(){
         String s1 = "a" + "b" + "c";  // 得到 abc的常量池
         String s2 = "abc"; // abc存放在常量池，直接将常量池的地址返回
         /**
@@ -18,7 +19,10 @@ public class StringTest5 {
         System.out.println(s1.equals(s2)); // true
     }
 
-    public static void test2() {
+    //只要其中有一个是变量，结果就在堆中(不在字符串常量池中)。
+    // 变量拼接的原理是StringBuilder
+    @Test
+    public void test2() {
         String s1 = "javaEE";
         String s2 = "hadoop";
         String s3 = "javaEEhadoop";
@@ -39,16 +43,13 @@ public class StringTest5 {
         System.out.println(s3 == s8); // true
     }
 
-    public static void test4() {
+    @Test
+    public  void test4() {
         final String s1 = "a";
         final String s2 = "b";
         String s3 = "ab";
         String s4 = s1 + s2;
         System.out.println(s3 == s4);
-    }
-
-    public static void test6() {
-
     }
 
     public static void method1(int highLevel) {
@@ -66,6 +67,6 @@ public class StringTest5 {
     }
 
     public static void main(String[] args) {
-        test4();
+
     }
 }
