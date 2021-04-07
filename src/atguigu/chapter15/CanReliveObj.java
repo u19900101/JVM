@@ -3,9 +3,6 @@ package atguigu.chapter15;
 /**
  * 测试Object类中finalize()方法
  * 对象复活场景
- *
- * @author: 陌溪
- * @create: 2020-07-12-11:06
  */
 public class CanReliveObj {
     // 类变量，属于GC Roots的一部分
@@ -13,10 +10,14 @@ public class CanReliveObj {
 
     @Override
     protected void finalize() throws Throwable {
+        System.out.println("调用当前类重写的finalize()方法,不指定引用");
+    }
+  /*  @Override
+    protected void finalize() throws Throwable {
         super.finalize();
         System.out.println("调用当前类重写的finalize()方法");
         canReliveObj = this;
-    }
+    }*/
 
     public static void main(String[] args) throws InterruptedException {
         canReliveObj = new CanReliveObj();
