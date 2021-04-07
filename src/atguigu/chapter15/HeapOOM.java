@@ -4,9 +4,8 @@ import java.util.ArrayList;
 
 /**
  * 内存溢出排查
- * -Xms8m -Xmx8m -XX:HeapDumpOnOutOfMemoryError
- * @author: 陌溪
- * @create: 2020-07-12-14:56
+ * -Xms8m -Xmx8m -XX:+HeapDumpOnOutOfMemoryError
+ *
  */
 public class HeapOOM {
     // 创建1M的文件
@@ -20,9 +19,9 @@ public class HeapOOM {
                 list.add(new HeapOOM());
                 count++;
             }
-        } catch (Exception e) {
-            e.getStackTrace();
+        } catch (Throwable e) {
             System.out.println("count:" + count);
+            e.getStackTrace();
         }
     }
 }
