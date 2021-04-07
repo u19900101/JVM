@@ -4,7 +4,7 @@ package atguigu.chapter13;
  * @author lppppp
  * @create 2021-04-06 16:08
  *
- *
+ *常量池中的同一变量只创建一份
  */
 public class StringPool_memory {
     public static void main(String[] args) {
