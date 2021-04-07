@@ -1,10 +1,9 @@
 package atguigu.chapter15;
 
 /**
+ * 手动gc 回收不可达对象
  * 局部变量回收
  *
- * @author: 陌溪
- * @create: 2020-07-12-19:12
  */
 public class LocalVarGC {
 
@@ -53,9 +52,16 @@ public class LocalVarGC {
         localvarGC1();
         System.gc();
     }
+    /**
+     * localvarGC3中的数组已经被回收
+     */
+    public void localvarGC6() {
+        localvarGC3();
+        System.gc();
+    }
 
     public static void main(String[] args) {
         LocalVarGC localVarGC = new LocalVarGC();
-        localVarGC.localvarGC3();
+        localVarGC.localvarGC6();
     }
 }
