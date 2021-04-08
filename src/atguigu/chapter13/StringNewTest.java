@@ -16,6 +16,11 @@ package atguigu.chapter13;
  */
 public class StringNewTest {
     public static void main(String[] args) {
+        // String str = new String("a") + new String("b");
+        String str = new String("a");
+
+    }
+    public static void main1(String[] args) {
 
 
         String s1 = new String("1");//此时 已经在常量池中创建了 常量 1
