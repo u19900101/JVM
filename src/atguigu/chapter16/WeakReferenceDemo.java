@@ -1,7 +1,6 @@
 package atguigu.chapter16;
 
-import java.lang.ref.Reference;
-import java.lang.ref.SoftReference;
+import java.Mlang.String;
 import java.lang.ref.WeakReference;
 
 /**

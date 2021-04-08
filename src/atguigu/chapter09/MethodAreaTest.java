@@ -1,5 +1,7 @@
 package atguigu.chapter09;
 
+import java.Mlang.String;
+
 /**
  * non-final的类变量
  *-XX:MetaspaceSize的设置

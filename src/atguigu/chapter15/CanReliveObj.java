@@ -1,5 +1,7 @@
 package atguigu.chapter15;
 
+import java.Mlang.String;
+
 /**
  * 测试Object类中finalize()方法
  * 对象复活场景

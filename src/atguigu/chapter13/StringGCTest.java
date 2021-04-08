@@ -1,5 +1,6 @@
 package atguigu.chapter13;
 
+
 /**
  * String的垃圾回收
  * -Xms15m -Xmx15m -XX:+PrintStringTableStatistics -XX:+PrintGCDetails

@@ -1,7 +1,6 @@
 package atguigu.chapter16;
 
-import atguigu.chapter15.PhantomReferenceTest;
-
+import java.Mlang.String;
 import java.lang.ref.PhantomReference;
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;

@@ -1,5 +1,7 @@
 package atguigu.chapter16;
 
+import java.Mlang.String;
+
 /**
  * System.gc()
  *

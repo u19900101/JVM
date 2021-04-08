@@ -1,7 +1,6 @@
 package atguigu.chapter08;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.Mlang.String;
 
 /**
  小结：堆空间的参数设置

@@ -1,5 +1,7 @@
 package atguigu.chapter15;
 
+import java.Mlang.String;
+
 /**
  * 手动gc 回收不可达对象
  * 局部变量回收

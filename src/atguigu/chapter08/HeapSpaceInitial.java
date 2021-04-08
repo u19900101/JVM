@@ -1,5 +1,7 @@
 package atguigu.chapter08;
 
+import java.Mlang.String;
+
 /**
  * 1.
  * -Xms 用来设置堆空间（年轻代+老年代）的初始内存大小

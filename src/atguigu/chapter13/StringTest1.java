@@ -1,7 +1,5 @@
 package atguigu.chapter13;
 
-import org.junit.Test;
-
 /**
  * String的不可变性
  *

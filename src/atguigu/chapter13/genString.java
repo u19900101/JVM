@@ -1,10 +1,6 @@
 package atguigu.chapter13;
-
-import org.junit.Test;
-
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Random;
 
 /**
  * @author lppppp

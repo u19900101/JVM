@@ -3,6 +3,8 @@ package atguigu.chapter09;
 import jdk.internal.org.objectweb.asm.ClassWriter;
 import jdk.internal.org.objectweb.asm.Opcodes;
 
+import java.Mlang.String;
+
 /**
  * 元空间溢出
  * -XX:MetaspaceSize=10M -XX:MaxMetaspaceSize=10M

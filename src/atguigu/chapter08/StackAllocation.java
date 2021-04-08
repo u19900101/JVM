@@ -1,5 +1,6 @@
 package atguigu.chapter08;
 
+
 /**
  * 栈上分配  逃逸分析和标量替换  一起开启效果好，单独开启无甚用
  * -Xmx1G -Xms1G

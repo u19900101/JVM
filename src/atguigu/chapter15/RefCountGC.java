@@ -1,5 +1,7 @@
 package atguigu.chapter15;
 
+import java.Mlang.String;
+
 /**
  * 引用计数算法测试
  *
