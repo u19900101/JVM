@@ -7,8 +7,11 @@ package atguigu.chapter17;
  *
  * 使用命令行指令：jinfo -flag  相关垃圾回收器参数  进程ID
 
-    jdk1.8   -XX:+UseParallelGC
-    jdk11    -XX:+UseG1GC
+    jdk1.8默认   -XX:+UseParallelGC(新生代中)  ParallelOldGC
+    jdk11默认   -XX:+UseG1GC
+
+ 指定 特定GC -XX:+UseSerialGC
+            -XX:+UseParNewGC
  */
 public class GCUseTest {
     static final Integer _1MB = 1024 * 1024;
